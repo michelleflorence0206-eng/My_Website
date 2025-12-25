@@ -1,0 +1,278 @@
+/* ======== GLOBAL BODY STYLE ======== */
+body {
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    color: black;
+}
+
+/* ======== MAIN CONTAINER ======== */
+.container {
+    background-color: rgba(255, 255, 255, 0.95);
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+
+/* ======== HEADINGS ======== */
+h1, h2 {
+    color: #162351;
+}
+
+/* ======== SECTIONS (INDEX) ======== */
+section {
+    margin: 20px 0;
+    padding: 15px;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+/* ======== TABLES (INDEX) ======== */
+table {
+    margin: auto;
+    border-collapse: collapse;
+    background-color: rgba(255,255,255,0.9);
+}
+
+td, th {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+/* ======== BUTTONS (INDEX) ======== */
+.button {
+    background-color: pink;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    margin: 5px;
+}
+
+.button:hover {
+    background-color: hotpink;
+}
+
+/* ======== MARQUEE (INDEX) ======== */
+marquee {
+    color: #ffcc00;
+    font-weight: bold;
+}
+
+/* ======== GLOBAL IMAGE STYLE ======== */
+img {
+    border-radius: 10px;
+}
+
+/* ======== HOBBIES SPLIT PANEL (INDEX) ======== */
+.hobbies-split {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+
+.hobby-left,
+.hobby-right {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+}
+
+.hobby-left {
+    border-right: 2px solid #ccc;
+}
+
+.hobby-left img,
+.hobby-right img {
+    border-radius: 10px;
+    margin-bottom: 10px;
+    max-width: 100%;
+    height: auto;
+}
+
+/* ======== GALLERY BOX (INDEX) ======== */
+#gallery {
+    margin-top: 30px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    padding: 20px;
+}
+
+/* ======== NAVIGATION (SHARED BY BOTH PAGES) ======== */
+header nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #162351;
+}
+
+header nav a:hover {
+    color: #4c5fd7;
+}
+
+/* ======== HR LINE (GALLERY) ======== */
+hr {
+    border: 0;
+    height: 1px;
+    background-color: #ccc;
+    margin: 20px 0;
+}
+
+/* ======== GRID GALLERY (GALLERY PAGE) ======== */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.gallery img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* ======== FOOTER (GALLERY PAGE) ======== */
+footer {
+    margin-top: 50px;
+    background-color: rgba(13, 59, 102, 0.9);
+    padding: 15px 0;
+    border-radius: 15px;
+    color: white;
+}
+/* ---- CONTACT PAGE STYLES ---- */
+
+.contact-body {
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    color: black;
+}
+
+.contact-container {
+    background-color: rgba(255, 255, 255, 0.95);
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+
+.contact-header nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #162351;
+}
+
+.contact-header nav a:hover {
+    color: #4c5fd7;
+}
+
+h1, h2 {
+    color: #162351;
+}
+
+/* Form */
+form {
+    margin: 20px auto;
+    max-width: 600px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin: 15px 0 5px;
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical;
+    height: 150px;
+}
+
+.button {
+    background-color: lightblue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.button:hover {
+    background-color: blue;
+}
+
+/* Footer */
+.contact-footer {
+    margin-top: 50px;
+    background-color: rgba(13, 59, 102, 0.9);
+    padding: 15px 0;
+    border-radius: 15px;
+}
+
+
+/* Hidden text initially */
+.hidden-text {
+    display: none;
+    margin-top: 10px;
+    color: #333;
+    background-color: #f7f7f7;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+/*-- IMAGES --*/
+img {
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+}
+
+/*-- HIDDEN TEXT --*/
+.hidden-text {
+    display: none;
+    margin-top: 10px;
+    text-align: left;
+    color: #333;
+    background-color: #f7f7f7;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+/*-- PROJECT TABLE IMAGES --*/
+.project-table img {
+    width: 700px;    
+    height: 200px;     
+    object-fit: cover;
+    border-radius: 10px;
+}
